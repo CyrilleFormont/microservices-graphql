@@ -1,5 +1,5 @@
 ﻿using GraphQL.Types;
-using Vanilla.Project.API.SchemaTypes.UserTypes;
+using Vanilla.Project.API.SchemaTypes.ProjectTypes;
 
 namespace Vanilla.Project.API.SchemaTypes
 {

@@ -1,7 +1,7 @@
 ﻿using GraphQL.Types;
-using Vanilla.Project.API.SchemaTypes.UserTypes.Types;
+using Vanilla.Project.API.SchemaTypes.ProjectTypes.Types;
 
-namespace Vanilla.Project.API.SchemaTypes.UserTypes
+namespace Vanilla.Project.API.SchemaTypes.ProjectTypes
 {
     public class UserQueries : ObjectGraphType
     {

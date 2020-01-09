@@ -5,7 +5,7 @@ using MicroserviceCommunicator;
 using Vanilla.Project.Persistence.Enumerators;
 using Vanilla.Project.Persistence.Models;
 
-namespace Vanilla.Project.API.SchemaTypes.UserTypes
+namespace Vanilla.Project.API.SchemaTypes.ProjectTypes
 {
     public class ProjectMutations : BaseMutation
     {

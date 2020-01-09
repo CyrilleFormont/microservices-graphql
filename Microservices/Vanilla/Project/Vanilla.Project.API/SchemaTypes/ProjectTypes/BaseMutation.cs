@@ -1,7 +1,7 @@
 ﻿using GraphQL.Types;
 using MicroserviceCommunicator;
 
-namespace Vanilla.Project.API.SchemaTypes.UserTypes
+namespace Vanilla.Project.API.SchemaTypes.ProjectTypes
 {
     public class BaseMutation : ObjectGraphType
     {

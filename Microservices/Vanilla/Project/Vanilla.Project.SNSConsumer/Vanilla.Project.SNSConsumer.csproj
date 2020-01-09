@@ -12,9 +12,9 @@
     <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="1.5.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Microservices\Vanilla\MessageBrokerDto\MessageBrokerDtos\MessageBrokerDtos.csproj" />
+    <Folder Include="Commands\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Commands\" />
+    <ProjectReference Include="..\..\MessageBrokerDto\MessageBrokerDtos\MessageBrokerDtos.csproj" />
   </ItemGroup>
 </Project>
