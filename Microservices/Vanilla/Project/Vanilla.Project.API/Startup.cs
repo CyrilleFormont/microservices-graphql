@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Vanilla.Project.API.SchemaTypes;
-using Vanilla.Project.API.SchemaTypes.UserTypes;
+using Vanilla.Project.API.SchemaTypes.ProjectTypes;
 
 namespace Vanilla.Project.API
 {
@@ -23,6 +23,7 @@ namespace Vanilla.Project.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Latest);
+
             #region D.I.Registration
             services.AddTransient<ProjectMutations>();
             services.AddTransient<UserQueries>();

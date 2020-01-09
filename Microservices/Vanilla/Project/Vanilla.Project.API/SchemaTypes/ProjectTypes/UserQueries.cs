@@ -7,7 +7,7 @@ namespace Vanilla.Project.API.SchemaTypes.UserTypes
     {
         public UserQueries()
         {
-            this.Field<UserType>("getUser",
+            this.Field<ProjectType>("getUser",
                 arguments:
                 new QueryArguments(new QueryArgument<IntGraphType> {Name = "id"}),
                 resolve:
