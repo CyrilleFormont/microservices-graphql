@@ -14,9 +14,10 @@ using GraphQL.Http;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.Extensions.Hosting;
 using MicroserviceCommunicator;
-using Vanilla.User.API.SchemaTypes;
-using Vanilla.User.API.SchemaTypes.UserTypes;
-using Vanilla.User.API.SchemaTypes.UserTypes.Types;
+using Vanilla.User.API.SchemaDefinition;
+using Vanilla.User.API.SchemaDefinition.UserDefinition;
+using Vanilla.User.API.SchemaDefinition.UserDefinition.InputTypes;
+using Vanilla.User.API.SchemaDefinition.UserDefinition.Types;
 
 namespace Vanilla.User.API
 {
@@ -28,11 +29,13 @@ namespace Vanilla.User.API
         {
             services.AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
-                .AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore); ;
+                .AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
+
             #region D.I.Registration
             services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
             services.AddSingleton<IDocumentWriter, DocumentWriter>();
-
+            
+            services.AddTransient<RegisterUserInputType>();
             services.AddTransient<UserType>();
             services.AddTransient<UserMutations>();
             services.AddTransient<UserQueries>();

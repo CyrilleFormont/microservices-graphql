@@ -1,6 +1,6 @@
 ﻿using GraphQL.Types;
 
-namespace Vanilla.User.API.SchemaTypes.UserTypes.Types
+namespace Vanilla.User.API.SchemaDefinition.UserDefinition.Types
 {
     public class UserType : ObjectGraphType<Persistence.Models.User>
     {

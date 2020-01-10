@@ -1,7 +1,7 @@
 ﻿using GraphQL.Types;
-using Vanilla.User.API.SchemaTypes.UserTypes;
+using Vanilla.User.API.SchemaDefinition.UserDefinition;
 
-namespace Vanilla.User.API.SchemaTypes
+namespace Vanilla.User.API.SchemaDefinition
 {
     public class Queries : ObjectGraphType
     {

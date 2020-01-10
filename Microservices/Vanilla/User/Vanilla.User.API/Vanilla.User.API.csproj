@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\Commons\MicroserviceCommunicator\MicroserviceCommunicator.csproj" />
     <ProjectReference Include="..\..\MessageBrokerDto\MessageBrokerDtos\MessageBrokerDtos.csproj" />
+    <ProjectReference Include="..\Vanilla.User.Application\Vanilla.User.Application.csproj" />
     <ProjectReference Include="..\Vanilla.User.Persistence\Vanilla.User.Persistence.csproj" />
     <ProjectReference Include="..\Vanilla.User.SNSConsumer\Vanilla.User.SNSConsumer.csproj" />
   </ItemGroup>

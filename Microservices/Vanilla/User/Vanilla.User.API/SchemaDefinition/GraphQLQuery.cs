@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 
-namespace Vanilla.User.API.SchemaTypes
+namespace Vanilla.User.API.SchemaDefinition
 {
     public class GraphQLQuery
     {

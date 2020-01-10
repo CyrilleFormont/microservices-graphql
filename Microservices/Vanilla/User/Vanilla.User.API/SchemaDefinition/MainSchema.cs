@@ -1,16 +1,15 @@
 ﻿using System;
-using GraphQL;
 using GraphQL.Types;
 using GraphQL.Utilities;
 
-namespace Vanilla.User.API.SchemaTypes
+namespace Vanilla.User.API.SchemaDefinition
 {
     public class MainSchema: Schema
     {
         public MainSchema(IServiceProvider provider) : base(provider)
         {
-            Query = provider.GetRequiredService<Queries>();
-            Mutation = provider.GetRequiredService<Mutations>();
+            this.Query = provider.GetRequiredService<Queries>();
+            this.Mutation = provider.GetRequiredService<Mutations>();
         }
     }
 }

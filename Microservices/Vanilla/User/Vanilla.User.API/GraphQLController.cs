@@ -5,7 +5,8 @@ using GraphQL;
 using GraphQL.Types;
 using GraphQL.Validation.Complexity;
 using Microsoft.AspNetCore.Mvc;
-using Vanilla.User.API.SchemaTypes;
+using Vanilla.User.API.SchemaDefinition;
+
 namespace Vanilla.User.API
 {
     [Route("/graphql")]
