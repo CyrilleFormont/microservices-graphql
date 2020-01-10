@@ -119,9 +119,8 @@ namespace MicroserviceCommunicator
         public void SendMessage(string subject ,object obj) 
         {
             if (this._messageBrokerSenderConfiguration.DryRun)
-            {
                 return;
-            }
+            
 
             var request = new PublishRequest
             {

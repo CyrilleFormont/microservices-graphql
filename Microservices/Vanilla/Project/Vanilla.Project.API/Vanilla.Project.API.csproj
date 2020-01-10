@@ -6,12 +6,11 @@
   <ItemGroup>
     <PackageReference Include="graphiql" Version="1.2.0" />
     <PackageReference Include="GraphQL" Version="2.4.0" />
-    <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Commons\MicroserviceCommunicator\MicroserviceCommunicator.csproj" />
     <ProjectReference Include="..\..\MessageBrokerDto\MessageBrokerDtos\MessageBrokerDtos.csproj" />
     <ProjectReference Include="..\Vanilla.Project.Persistence\Vanilla.Project.Persistence.csproj" />
+    <ProjectReference Include="..\Vanilla.Project.SNSConsumer\Vanilla.Project.SNSConsumer.csproj" />
   </ItemGroup>
 </Project>

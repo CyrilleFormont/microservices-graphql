@@ -6,13 +6,14 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="graphiql" Version="1.2.0" />
-    <PackageReference Include="GraphQL" Version="2.4.0" />
-    <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="GraphQL" Version="3.0.0-preview-1352" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Commons\MicroserviceCommunicator\MicroserviceCommunicator.csproj" />
     <ProjectReference Include="..\..\MessageBrokerDto\MessageBrokerDtos\MessageBrokerDtos.csproj" />
     <ProjectReference Include="..\Vanilla.User.Persistence\Vanilla.User.Persistence.csproj" />
+    <ProjectReference Include="..\Vanilla.User.SNSConsumer\Vanilla.User.SNSConsumer.csproj" />
   </ItemGroup>
 </Project>
