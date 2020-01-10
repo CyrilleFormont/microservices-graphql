@@ -10,10 +10,7 @@ namespace Vanilla.User.API.SchemaDefinition.UserDefinition
         public UserQueries(IUserServiceQuery userServiceQuery)
         {
             this._userServiceQuery = userServiceQuery;
-            this.Field<UserType>("getUser",
-                arguments:
-                new QueryArguments(new QueryArgument<IntGraphType> {Name = "id"}),
-                resolve: this.GetUser);
+            this.Field<UserType>("getUser", arguments: new QueryArguments(new QueryArgument<IntGraphType> {Name = "id"}), resolve: this.GetUser);
         }
 
         public object GetUser(ResolveFieldContext<object> ctx)
