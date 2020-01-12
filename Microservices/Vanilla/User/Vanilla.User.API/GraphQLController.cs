@@ -32,7 +32,6 @@ namespace Vanilla.User.API
                 UserContext = null,
                 EnableMetrics = true,
                 ExposeExceptions = true,
-                //ComplexityConfiguration = new ComplexityConfiguration { MaxDepth = 15 }
             };
 
             var result = await _documentExecuter.ExecuteAsync(executionOptions).ConfigureAwait(true);

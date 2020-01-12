@@ -35,7 +35,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vanilla.User.SNSConsumer", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vanilla.Project.SNSConsumer", "Microservices\Vanilla\Project\Vanilla.Project.SNSConsumer\Vanilla.Project.SNSConsumer.csproj", "{76B26675-509C-4CD6-92D5-3E81F52E0A5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vanilla.User.Application", "Microservices\Vanilla\User\Vanilla.User.Application\Vanilla.User.Application.csproj", "{E0DC7337-E7D6-44A2-8FD7-0D36605B4D60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vanilla.User.Application", "Microservices\Vanilla\User\Vanilla.User.Application\Vanilla.User.Application.csproj", "{E0DC7337-E7D6-44A2-8FD7-0D36605B4D60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vanilla.Log.SNSConsumer", "Microservices\Vanilla\Log\Vanilla.Log.SNSConsumer\Vanilla.Log.SNSConsumer.csproj", "{25D98DD0-56C0-4180-A092-EFEA92E92C9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vanilla.Log.Persistence", "Microservices\Vanilla\Log\Vanilla.Log.Persistence\Vanilla.Log.Persistence.csproj", "{740FA0AD-4503-42EC-B3F3-BD71E67EA7C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vanilla.Content.API", "Microservices\Vanilla\Content\Vanilla.Content.API\Vanilla.Content.API.csproj", "{6D51E73F-C5A8-46D0-88DE-034631746231}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vanilla.Content.Persistence", "Microservices\Vanilla\Content\Vanilla.Content.Persistence\Vanilla.Content.Persistence.csproj", "{69100EAB-8ACA-4324-8B10-9EB70A244F02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +87,22 @@ Global
 		{E0DC7337-E7D6-44A2-8FD7-0D36605B4D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0DC7337-E7D6-44A2-8FD7-0D36605B4D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0DC7337-E7D6-44A2-8FD7-0D36605B4D60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25D98DD0-56C0-4180-A092-EFEA92E92C9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25D98DD0-56C0-4180-A092-EFEA92E92C9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25D98DD0-56C0-4180-A092-EFEA92E92C9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25D98DD0-56C0-4180-A092-EFEA92E92C9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{740FA0AD-4503-42EC-B3F3-BD71E67EA7C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{740FA0AD-4503-42EC-B3F3-BD71E67EA7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{740FA0AD-4503-42EC-B3F3-BD71E67EA7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{740FA0AD-4503-42EC-B3F3-BD71E67EA7C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D51E73F-C5A8-46D0-88DE-034631746231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D51E73F-C5A8-46D0-88DE-034631746231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D51E73F-C5A8-46D0-88DE-034631746231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D51E73F-C5A8-46D0-88DE-034631746231}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69100EAB-8ACA-4324-8B10-9EB70A244F02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69100EAB-8ACA-4324-8B10-9EB70A244F02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69100EAB-8ACA-4324-8B10-9EB70A244F02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69100EAB-8ACA-4324-8B10-9EB70A244F02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -100,6 +124,10 @@ Global
 		{213654E6-6218-4EF7-81E8-A855619A337E} = {E2D8C6C6-0C78-4619-91ED-C82CF373682E}
 		{76B26675-509C-4CD6-92D5-3E81F52E0A5E} = {5BB104F9-C464-491D-8A33-CED589DEA1F3}
 		{E0DC7337-E7D6-44A2-8FD7-0D36605B4D60} = {E2D8C6C6-0C78-4619-91ED-C82CF373682E}
+		{25D98DD0-56C0-4180-A092-EFEA92E92C9B} = {29994F5E-A55D-4CBB-8A2C-096D87DD2C54}
+		{740FA0AD-4503-42EC-B3F3-BD71E67EA7C4} = {29994F5E-A55D-4CBB-8A2C-096D87DD2C54}
+		{6D51E73F-C5A8-46D0-88DE-034631746231} = {498B63C7-17F0-4535-A5A8-73858294B52A}
+		{69100EAB-8ACA-4324-8B10-9EB70A244F02} = {498B63C7-17F0-4535-A5A8-73858294B52A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2DB07DB3-FEF0-4F6A-9811-7A11010EBC45}

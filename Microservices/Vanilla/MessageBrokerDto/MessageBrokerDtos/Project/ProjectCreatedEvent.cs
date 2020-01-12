@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MessageBrokerDtos.Project
 {
-    public class ProjectCreatedEvent : BaseEvent
+    public class ProjectCreatedEvent : BaseEvent, IEvent
     {
         public ProjectCreatedEvent(int projectId,int creatorId)
         {
@@ -13,5 +13,10 @@ namespace MessageBrokerDtos.Project
         }
         public int ProjectId { get; set; }
         public int CreatorId { get; set; }
+
+        public void Ensure()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -21,7 +21,6 @@ namespace Vanilla.User.API.SchemaDefinition.UserDefinition
 
         public object RemoveUser(ResolveFieldContext<object> ctx)
         {
-           
 
             return true;
         }

@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using Amazon.Lambda.Core;
 using Amazon.Lambda.RuntimeSupport;
 using Amazon.Lambda.SNSEvents;
-using Newtonsoft.Json;
 using JsonSerializer = Amazon.Lambda.Serialization.Json.JsonSerializer;
 
 namespace Vanilla.User.SNSConsumer

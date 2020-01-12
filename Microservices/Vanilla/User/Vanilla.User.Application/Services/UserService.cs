@@ -16,7 +16,7 @@ namespace Vanilla.User.Application.Services
     }
 
 
-    public class UserService : BaseService, IUserServiceMutation, IUserServiceQuery
+    public class UserService : BaseService, IUserServiceQuery, IUserServiceMutation
     {
         private readonly IUnitOfWork _uow;
 

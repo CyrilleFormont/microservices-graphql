@@ -3,6 +3,7 @@ using Amazon.SecurityToken;
 using Amazon.SecurityToken.Model;
 using Amazon.SimpleNotificationService;
 using Amazon.SimpleNotificationService.Model;
+using MessageBrokerDtos;
 using Newtonsoft.Json;
 
 namespace MicroserviceCommunicator
@@ -40,7 +41,7 @@ namespace MicroserviceCommunicator
         /// <summary>
         /// Send message to a specific user
         /// </summary>
-        void SendMessage(string subject,object obj);
+        void SendMessage(string subject,IEvent obj);
 
         MessageBrokerSender WithArn(string arn);
     }
@@ -116,8 +117,10 @@ namespace MicroserviceCommunicator
         /// <summary>
         /// Send message to a specific arn
         /// </summary>
-        public void SendMessage(string subject ,object obj) 
+        public void SendMessage(string subject ,IEvent obj) 
         {
+            obj.Ensure();
+
             if (this._messageBrokerSenderConfiguration.DryRun)
                 return;
             
